@@ -1,0 +1,30 @@
+{
+  "kind": "ImageStream",
+  "apiVersion": "v1",
+  "metadata": {
+  "name": "s2i-swagger-ui",
+  "annotations": {
+    "openshift.io/display-name": "Angular2 TSS2I Swagger UI"
+    }
+  },
+  "spec": {
+    "dockerImageRepository": "docker.io/marcdespland/s2i-swagger-ui",
+    "tags": [
+       {
+        "name": "latest",
+        "from": {
+          "kind": "DockerImage",
+          "name": "docker.io/marcdespland/s2i-swagger-ui"
+        },
+        "annotations": {
+          "openshift.io/display-name": "Swagger-UI with proxy ",
+          "description": "Build a Swagger-ui server with a proxy to your API server",
+          "iconClass": "icon-git",
+          "tags": "builder,Swagger-ui",
+          "supports":"swagger-ui",
+          "version": "3.x"
+        }
+      }
+    ]
+  }
+}

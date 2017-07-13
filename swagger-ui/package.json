@@ -1,0 +1,20 @@
+{
+  "name": "CorsProxy",
+  "version": "0.0.1",
+  "private": true,
+  "description": "CorsProxy",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "cors": "^2.8.3",
+    "express": "^4.12.3",
+    "express-http-proxy": "^1.0.5"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test"
+  }
+}
