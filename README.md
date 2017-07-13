@@ -2,9 +2,9 @@
 
 This is an [S2I](https://github.com/openshift/source-to-image) image use to build Swagger-UI server to expose your api documentation with a proxy to access to your API server.
 
-You can remove the tag '''host''' then the internal proxy will be use to access your server
+You can remove the tag **host** then the internal proxy will be use to access your server
 
-Define the environnement variable '''TARGET_URL''' to access your server API
+Define the environnement variable **TARGET_URL** to access your server API
 
 
 ## Requirements
@@ -16,7 +16,7 @@ Define the environnement variable '''TARGET_URL''' to access your server API
 ## To build the S2I image
 
 	1. Clone this repository
-	2. Execute ```docker build -t s2i-swagger-ui .```
+	2. Execute **docker build -t s2i-swagger-ui .**
 
 ## To build an image with your application code
 With GIT url and --context-dir you have to provide the folder that contain the file swagger.yaml
