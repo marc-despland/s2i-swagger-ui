@@ -17,6 +17,7 @@ LABEL io.k8s.description="Create a swagger-ui image from a yaml documentation an
 COPY ./.s2i/bin/ /usr/libexec/s2i
 
 WORKDIR /opt/app-root
+RUN mkdir /opt/app-root/swagger
 
 # Copy the lighttpd configuration file
 COPY ./swagger-ui/ /opt/app-root/
